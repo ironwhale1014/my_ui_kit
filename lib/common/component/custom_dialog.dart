@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class CustomDialog extends ConsumerWidget {
+class CustomDialog extends StatelessWidget {
   const CustomDialog({
     super.key,
     required this.titleText,
@@ -20,7 +19,7 @@ class CustomDialog extends ConsumerWidget {
   final String btnRightText;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return AlertDialog(
       title: Text(
         titleText,
