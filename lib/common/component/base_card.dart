@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class BaseCard extends StatelessWidget {
   const BaseCard({
     super.key,
-    required this.title,
+
     this.lastStudyDate,
     this.onTap,
     this.backgroundColor,
@@ -14,7 +14,6 @@ class BaseCard extends StatelessWidget {
     required this.child,
   });
 
-  final String title;
   final String? lastStudyDate;
   final GestureTapCallback? onTap;
   final Color? backgroundColor;
