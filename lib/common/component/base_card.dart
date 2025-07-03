@@ -32,7 +32,10 @@ class BaseCard extends StatelessWidget {
       child: Card.outlined(
         margin: const EdgeInsets.only(bottom: 8, top: 8),
         color: backgroundColor ?? Colors.white,
-        child: child,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: child,
+        ),
       ),
     );
   }
