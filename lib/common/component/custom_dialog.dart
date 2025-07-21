@@ -5,16 +5,16 @@ class CustomDialog extends StatelessWidget {
     super.key,
     required this.titleText,
     this.child,
-    this.btnLeftFunc,
-    this.btnRightFunc,
+    required this.btnLeftFunc,
+    required this.btnRightFunc,
     required this.btnLeftText,
     required this.btnRightText,
   });
 
   final String titleText;
   final Widget? child;
-  final VoidCallback? btnLeftFunc;
-  final VoidCallback? btnRightFunc;
+  final VoidCallback btnLeftFunc;
+  final VoidCallback btnRightFunc;
   final String btnLeftText;
   final String btnRightText;
 
